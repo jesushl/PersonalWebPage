@@ -7,8 +7,12 @@ function openTab(tabToShow) {
     document.getElementById(tabToShow).style.display = "block"; 
 }
 
-var slideProyectIndex = 1;
-showProyectsDivs(slideProyectIndex);
+var slideProyectIndex;
+function initSlides(){
+    slideProyectIndex = 1;
+    showProyectsDivs(slideProyectIndex);    
+}
+
 
 function proyectsDivs(n){
     showProyectsDivs(slideProyectIndex += n);
@@ -22,5 +26,5 @@ function showProyectsDivs(n){
     for(i = 0 ; i < proyectsSlides.length ; i++) {
         proyectsSlides[i].style.display="none";
     }
-    proyectsSlides[slideProyectIndex - 1].style.display = "block";
+    proyectsSlides[slideProyectIndex-1].style.display = "block";
 }

@@ -36,7 +36,7 @@
          <i class="fa fa-home" aria-hidden="true"></i> &emsp;Home
         </div>
         <div class="w3-bar-item w3-button w3-mobile "
-            onclick="openTab('proyects_tap')">
+            onclick="openTab('proyects_tap'); initSlides()" >
              Proyects&emsp;<i class="fa fa-free-code-camp" aria-hidden="true"></i>
         </div>
         <a  class="w3-bar-item w3-button w3-mobile "
@@ -69,15 +69,15 @@
 
     <div id="proyects_tap" class="tabsInPersonalWeb" style="display:none">
         <div class="w3-content w3-display-container">
-            <div class="proyectsSlides" style >
+            <div class="proyectsSlides" style="none">
                 <h2>WEB</h2>
                 <p>Links to WEB GitHub links Proyects</p> 
             </div>
-            <div class="proyectsSlides">
+            <div class="proyectsSlides" style="none">
                 <h2>Mobile</h2>
                 <p> Links to Mobile Git Hub  Proyects</p>
             </div>
-           <div class="proyectsSlides">
+           <div class="proyectsSlides" style="none">
                 <h2>The rest</h2>
                 <p>Links to tutorials repositories in Git Hub</p>
            </div> 
