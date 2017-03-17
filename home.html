@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <title>Jesus Herrera</title>
+
+
+<!--  Relational Links  -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 
+<!-- JAVA SCRIPT -->
+<script type="text/javascript" src="scripts/pageScripts.js"></script>
+<!-- JAVA SCRIPT END-->
 <!-- CCS -->
-<style>
-    html,body,h1,h2,h3,h4,h5,h6 {
-    font-family: 'Crete Round', serif;
-    }
-</style>
+
 <!-- CSS END-->
 <body>
 
@@ -26,20 +28,67 @@
         </div>
     <h1>José de Jesús Herrera Ledón</h1>     
   </center>
+<!-- Central DIV -->
+<div>
+    <div class="w3-bar w3-black">
+        <center>
+        <div href="#" class="w3-bar-item w3-button w3-mobile " onclick="openTab('curriculum_tap')">
+         <i class="fa fa-home" aria-hidden="true"></i> &emsp;Home
+        </div>
+        <div class="w3-bar-item w3-button w3-mobile "
+            onclick="openTab('proyects_tap')">
+             Proyects&emsp;<i class="fa fa-free-code-camp" aria-hidden="true"></i>
+        </div>
+        <a  class="w3-bar-item w3-button w3-mobile "
+            onclick="openTab('hobbies_tab')">
+            Hobbies&emsp;<i class="fa fa-motorcycle" aria-hidden="true"></i>
+        </a>
+        <div class="w3-bar-item w3-button w3-mobile "
+            onclick="openTab('contact_tab')">
+            Contact&emsp; <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+        </div>
+        </center>
+    </div>
+</div>
+<div>
+    <div id="curriculum_tap" class="tabsInPersonalWeb">
+        <h2>Jesus Herrera</h2>
+        <p><h4> Software Engineer. </h4></p>
+        <p>
+            <h4>&#864;o &emsp; Programing Lenguages</h4>
+            Python<br>
+            Java<br>
+            Ruby<br>
+        </p>
+        <p> 
+            University: Autonomus University of México<br>
+            Nationality: Mexican<br>
+            Lenguages: Spanish 80%  English:60%<br>
+        </p>
+    </div>
 
-<div class="w3-bar w3-black">
-    <a href="#" class="w3-bar-item w3-button w3-mobile">
-        Home
-    </a>
-    <a href="#" class="w3-bar-item w3-button w3-mobile">
-        Proyects
-    </a>
-    <a href="#" class="w3-bar-item w3-button w3-mobile">
-        Hobbies
-    </a>
-    <a href="#" class="w3-bar-item w3-button w3-mobile">
-        Contact
-    </a>
+    <div id="proyects_tap" class="tabsInPersonalWeb" style="display:none">
+      <h2>GitHub</h2>
+      <p>Links to GitHub links</p> 
+    </div>
+
+    <div id="hobbies_tab" class="tabsInPersonalWeb" style="display:none">
+      <h2>Hobbies</h2>
+      <p>Risa terapia Org<br>
+      Violin<br>
+      Guitarr<br>
+      Rolling<br>
+      Hacker Rank<br>
+      Travel <br>
+      VR <br>
+      </p>
+    </div>
+    <div id="contact_tab" class="tabsInPersonalWeb" style="display:none">
+        <h2>Contact</h2>
+        <p>
+        Phone : +521 55 3342 8574
+        </p>
+    </div>
 </div>
 
 </body>
