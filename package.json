@@ -1,0 +1,28 @@
+{
+  "name": "jesushledon",
+  "version": "1.0.0",
+  "description": "Personal Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesushl/PersonalWebPage.git"
+  },
+  "keywords": [
+    "jesus",
+    "herrera",
+    "ledon",
+    "personal",
+    "web",
+    "senior",
+    "developer"
+  ],
+  "author": "Jose de Jesus Herrera Ledon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesushl/PersonalWebPage/issues"
+  },
+  "homepage": "https://github.com/jesushl/PersonalWebPage#readme"
+}
