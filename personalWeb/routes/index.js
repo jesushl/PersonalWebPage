@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('home', { title: 'Jose De Jesus Herrera Ledon' });
+  res.render('index', { title: 'Jose De Jesus Herrera Ledon' });
 });
 
 module.exports = router;
