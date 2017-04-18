@@ -1,0 +1,34 @@
+div
+    div(class='w3-bar w3-black')
+        center
+            div(class='w3-bar-item w3-button w3-mobile',onclick=openTab('curriculum_tap'))
+                i(class='fa fa-home', aria-hidden='true') 
+                Home
+            div(class='w3-bar-item w3-button w3-mobile', onclick='openTab('proyects_tap'); initSlides()')
+
+    var tabsInPersonalWebAttributes={};
+    tabsInPersonalWebAttributes.class='tabsInPersonalWeb'
+    
+    div#curriculum_tap&attributes(tabsInPersonalWebAttributes)
+        h2 Jesus Herrera
+        p
+            h4  Software Engineer
+        p
+            h4
+                #Programing Lenguajes
+                br Python 
+                br Java
+                Ruby
+
+    div#proyects_tab&attributes(tabsInPersonalWebAttributes)
+        div(class='w3-content w3-display-container')
+            ·proyectsSlides
+                h2 WEB
+                p Links to Web GitHub links Proyects
+            .proyectsSlides
+                h2 Mobile
+                p Links to mobile git hub proyects
+            .proyectsSlides
+                h2 The rest
+                p Links to tutorials repositories in Git Hub
+
