@@ -4,11 +4,14 @@
 
 
 <!--  Relational Links  -->
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+
 
 <!-- JAVA SCRIPT -->
 <script type="text/javascript" src="scripts/pageScripts.js"></script>
@@ -37,7 +40,7 @@
         </div>
         <div class="w3-bar-item w3-button w3-mobile "
             onclick="openTab('proyects_tap'); initSlides()" >
-             Proyects&emsp;<i class="fa fa-free-code-camp" aria-hidden="true"></i>
+             Proyects&emsp;<i class="fa fa-github-alt" aria-hidden="true"></i>
         </div>
         <a  class="w3-bar-item w3-button w3-mobile "
             onclick="openTab('hobbies_tab')">
@@ -47,46 +50,147 @@
             onclick="openTab('contact_tab')">
             Contact&emsp; <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
         </div>
+        <div class = "w3-bar-item w3-button w3-mobile" onclick="openTab('video_tap')">
+            Videos&emsp;<i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
         </center>
     </div>
 </div>
 <div>
     <div id="curriculum_tap" class="tabsInPersonalWeb">
-        <h2>Jesus Herrera</h2>
-        <p><h4> Software Engineer. </h4></p>
-        <p>
-            <h4>&#864;o &emsp; Programing Lenguages</h4>
-            Python<br>
-            Java<br>
-            Ruby<br>
-        </p>
-        <p> 
-            University: Autonomus University of México<br>
-            Nationality: Mexican<br>
-            Lenguages: Spanish 80%  English:60%<br>
-        </p>
+        <div class="w3-card-4">
+            <header class="w3-blue">
+                <h1> Software Engineer </h1>
+                Mobile: +52 1 55 3342 8574 <br>
+                Email: jesushledon@gmail.com<br>
+                <a href="https://github.com/jesushl?tab=repositories" target="_blank">GITHUB</a>
+
+            </header>
+            <div class="w3-container">
+                <p>
+                    <h2><i class="fa fa-laptop" aria-hidden="true">
+                        </i> Technical Skills</h2>
+                    <h3>
+                    
+                    <table class="w3-table">    
+                        <tr>
+                            <th><i class="fa fa-space-shuttle" aria-hidden="true"></i>
+                            Python<br></th>
+                            
+                            <th><i class="fa fa-coffee" aria-hidden="true"></i> 
+                            Java<br></th>
+                            
+                            <th><i class="fa fa-diamond" aria-hidden="true"></i> 
+                            Ruby<br></th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Java Script
+                            </th>
+                            <th>
+                                Shell Script
+                            </th>
+                            <th>
+                                MySQL
+                            </th>
+                        </tr>
+
+                    </table>
+                    </h3>
+
+
+                </p>
+            </div>
+            <div class = "w3-containder w3-blue">    
+                    Education:<br>
+                     &emsp;Autonomus University of México <br>
+                     &emsp;Computer Engineer<br>        
+                    Nationality: Mexican<br>
+                    Lenguages:  English: 75%    Spanish: Native <br>
+            
+            </div>
+        </div>
     </div>
 
+      
     <div id="proyects_tap" class="tabsInPersonalWeb" style="display:none">
-        <div class="w3-content w3-display-container">
-            <div class="proyectsSlides" style="none">
-                <h2>WEB</h2>
-                <p>Links to WEB GitHub links Proyects</p> 
+            <button class="w3-button w3-display-left" onclick="proyectsDivs(-1)">&#10094;
+                        </button>
+            <button class="w3-button w3-display-right" onclick="proyectsDivs(+1)">&#10095;
+                        </button>
+            <div class="w3-content w3-display-container">
+                <ul class="w3-ul w3-border proyectsSlides " >
+                    <li class="w3-blue">
+                        <img src="images/HCL.png" class="w3-left w3-circle w3-margin-right" style="width:50px" >
+                        <h2> HCL 01/2017 - Actual </h2><h4> Senior Developer</h4><h5> Business Intelligence</h5>
+                    </li>
+                  <li> Java and Python Developer</li>
+                  <li> Hortonworks  </li>
+                  <li> Cobol migrations </li>
+                </ul>
+                <ul class="w3-ul w3-border proyectsSlides">
+                    <li class="w3-blue">
+                        <img src="images/ibm.png" class="w3-left w3-circle w3-margin-right" style="width:50px" >
+                        <h2> IBM   02/2015 - 09/2016</h2><h5>Build and Release Engineer</h5>
+                    </li>
+                  <li>Python tools developer, server administration, build management and product visualization</li>
+                  <li>Maintenance, support and builds of Rational  Collaborative Lifecycle Management </li>
+                  <li>Maintenance, support and builds of Rational Software Architect</li>
+                  <li>Create communication channels between build team and developer team</li>
+                  <li>Tools for build maintenance and management in ANT, Python, Shell script and Java</li>
+                  <li>Web result maintenance, Angular JS </li>
+                </ul>
+                
+                <ul class="w3-ul w3-border proyectsSlides">
+                    <li class="w3-blue">
+                        <img src="images/hitss.png" class="w3-left w3-circle w3-margin-right" style="width:50px" >
+                        <h2>HITSS  06/2014 - 02/2015 (IBM Vendor)</h2><h4>Java Developer</h4><h5> L3 for  IBM ALM Foundation</h5>
+                    </li>
+                  <li>Support  Applications on Jazz Foundation, UI, Server, DB</li>
+                  <li>Research issues from escalation report </li>
+                  <li>Make and deliver TestFix</li>
+                </ul>
+                <ul class="w3-ul w3-border proyectsSlides">
+                    <li class="w3-blue">
+                        <img src="images/free.jpg" class="w3-left w3-circle w3-margin-right" style="width:50px" >
+                        <h2>Freelance - Android and Ruby on Rails Developer *Actual </h2>
+                    </li>
+                    <li>Android Applications Furuka and Kuuza </li>
+                    <li>Database Design</li>
+                    <li>Rails API  for Kuuza</li>
+                    <li><h6>*Some personal projects and work for external  clients</h6> </li>
+                </ul>
+                <ul class="w3-ul w3-border proyectsSlides">
+                    <li class="w3-blue">
+                        <img src="images/unam.jpg" class="w3-left w3-circle w3-margin-right" style="width:50px" >
+                        <h2>Autonomus University of Mexico  06/2013 - 03/2014</h2><h5>Java Developer (Scholar project) </h5> 
+                    </li>
+                    <li>Develop audit application to internal audit to Autonomous National University of Mexico (UNAM) </li>
+                    <li>Develop Swing Application for audith system</li>
+                    <li>Develop PDM marks system</li>
+                    <li>Participation on database design</li>
+                </ul>
+                <ul class="w3-ul w3-border proyectsSlides">
+                    <li class="w3-blue">
+                        <img src="images/pic.png" class="w3-left w3-circle w3-margin-right" style="width:50px" >
+                        <h2>Control System Developer 06/2010 - 06/2012</h2><h6>PIC technology</h6>
+                    </li>
+                    <li>Develop a control board for a infrared oven </li>
+                    <li>Design a motor control system</li>
+                    <li>C++ and ensenble developer</li>
+                </ul>
+                <ul class="w3-ul w3-border proyectsSlides">
+                    <li class="w3-blue">
+                        <img src="images/HTML4.jpg" class="w3-left w3-circle w3-margin-right" style="width:50px" >
+                        <h2>Web Developer 08/2006 - 08/2008</h2>
+                    </li>
+                    <li>Develop  hornosinfrarrojos.com</li>
+                    <li> Develop sarsot.com</li>
+                    <li> Support</li>
+                </ul>
+                    
             </div>
-            <div class="proyectsSlides" style="none">
-                <h2>Mobile</h2>
-                <p> Links to Mobile Git Hub  Proyects</p>
-            </div>
-           <div class="proyectsSlides" style="none">
-                <h2>The rest</h2>
-                <p>Links to tutorials repositories in Git Hub</p>
-           </div> 
         </div>
-        <button class="w3-button w3-display-left" onclick="proyectsDivs(-1)">&#10094;
-        </button>
-        <button class="w3-button w3-display-right" onclick="proyectsDivs(+1)">&#10095;
-        </button>
-    </div>
 
     <div id="hobbies_tab" class="tabsInPersonalWeb" style="display:none">
       <h2>Hobbies</h2>
@@ -108,4 +212,5 @@
 </div>
 
 </body>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 </html>
