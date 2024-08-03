@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jesushl/PersonalWebPage#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "serve": "^14.2.3"
   }
 }
