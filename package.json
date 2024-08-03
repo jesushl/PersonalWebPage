@@ -21,6 +21,7 @@
   "homepage": "https://github.com/jesushl/PersonalWebPage#readme",
   "dependencies": {
     "express": "^4.19.2",
-    "serve": "^14.2.3"
+    "serve": "^14.2.3",
+    "node": "20.16.0"
   }
 }
