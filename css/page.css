@@ -18,3 +18,8 @@ html,body,h1,h2,h3,h4,h5,h6 {
   text-shadow: 2px 2px 5px rgb(11, 136, 125);
   text-align: center;
 }
+
+.social_networks{
+  
+  padding-right: 100px;
+}
