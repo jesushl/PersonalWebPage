@@ -5,3 +5,16 @@ html,body,h1,h2,h3,h4,h5,h6 {
 #blackImage{
   background-color: ffffff;
 }
+
+#name_in_image{
+  color: rgb(220, 216, 240);
+  text-shadow: 2px 2px 5px rgb(11, 136, 125);
+  
+}
+
+
+#main_name{
+  color: rgb(58, 124, 199);
+  text-shadow: 2px 2px 5px rgb(11, 136, 125);
+  text-align: center;
+}
