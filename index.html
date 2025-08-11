@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose de Jesus Herrera Ledon - AI Software Engineer</title>
+    <meta name="description" content="AI Software Engineer at Intel with expertise in PyTorch, TorchRec, and high-performance computing. Specialized in machine learning, quantum computing, and cloud technologies.">
+    
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': {
+                            50: '#f0f9ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        },
+                        'secondary': {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-primary-600">J3SU5</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#about" class="text-gray-700 hover:text-primary-600 transition-colors">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-primary-600 transition-colors">Experience</a>
+                    <a href="#skills" class="text-gray-700 hover:text-primary-600 transition-colors">Skills</a>
+                    <a href="#education" class="text-gray-700 hover:text-primary-600 transition-colors">Education</a>
+                    <a href="#contact" class="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold mb-4">Jose de Jesus Herrera Ledon</h1>
+                    <h2 class="text-2xl font-semibold mb-6 text-blue-200">AI Software Engineer at Intel</h2>
+                    <p class="text-lg mb-8 text-blue-100">
+                        Specialized in high-performance computing, PyTorch, TorchRec, and quantum computing. 
+                        Passionate about developing cutting-edge AI solutions and contributing to open-source projects.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            Get in Touch
+                        </a>
+                        <a href="#experience" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
+                            View Experience
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img src="images/me.jpg" alt="Jose de Jesus Herrera Ledon" class="w-80 h-80 rounded-full object-cover shadow-2xl">
+                        <div class="absolute -bottom-4 -right-4 bg-secondary-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            <i class="fas fa-robot mr-2"></i>AI Engineer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    I'm an AI Software Engineer with over 8 years of experience in software development, 
+                    specializing in machine learning, quantum computing, and high-performance computing. 
+                    Currently working at Intel, I contribute to open-source AI frameworks and develop 
+                    cutting-edge solutions for the future of computing.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI & ML</h3>
+                    <p class="text-gray-600">Expert in PyTorch, TorchRec, and developing AI frameworks for high-performance computing.</p>
+                </div>
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-code text-2xl text-secondary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Software Development</h3>
+                    <p class="text-gray-600">Full-stack development with Python, Java, JavaScript, and modern web technologies.</p>
+                </div>
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-atom text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Quantum Computing</h3>
+                    <p class="text-gray-600">Certified in quantum algorithms for cybersecurity, chemistry, and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Transition Section -->
+    <section id="dynamic-transition" class="py-8 bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
+        <!-- Water waves -->
+        <div class="water-wave"></div>
+        <div class="water-wave"></div>
+        <div class="water-wave"></div>
+        
+        <!-- Floating particles -->
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        
+        <!-- Canvas for binary numbers -->
+        <canvas id="binaryCanvas" class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 2;"></canvas>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+                <p class="text-xl text-gray-600 mb-6">My journey in software engineering and AI development</p>
+                <div class="flex justify-center">
+                    <a href="resume/Jesus_Herrera_Ledon.pdf" download class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-download mr-2"></i>
+                        Download Full Resume (PDF)
+                    </a>
+                </div>
+            </div>
+            
+            <div class="space-y-8">
+                <!-- Intel AI Software Engineer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">AI Software Engineer</h3>
+                            <p class="text-primary-600 font-semibold">Intel</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Aug 2022 - Present
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed and optimized AI frameworks for high-performance computing
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Contributed to open-source projects, enhancing community collaboration
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Implemented gemm XPU for Torchrec, improving performance on Intel GPUs
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            VSCode extension development for Intel AI tools, enhancing developer experience
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Lead of Cloud Data Connector library, integrating with various cloud platforms
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Collaboration on Gaudi samples, showcasing AI capabilities on Intel hardware
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- UMBA Senior Software Engineer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Senior Software Engineer</h3>
+                            <p class="text-primary-600 font-semibold">UMBA</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Jul 2021 - Aug 2022
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed and maintained web applications using Flask and TypeScript
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Team lead of customer experience team, focusing on enhancing user engagement
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Creating and maintaining RESTful APIs for transactions and data processing
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed internal tools for data analysis and reporting
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed customer experience tools, enhancing user engagement and satisfaction
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Collaborate with financial and development teams to ensure compliance and efficiency
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intel Senior Software Engineer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Senior Software Engineer</h3>
+                            <p class="text-primary-600 font-semibold">Intel</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Nov 2019 - Jul 2021
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed software for quality and business intelligence
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Design and implementation of data pipelines for large-scale data processing
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Add Airflow workflows
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Design and migrate databases using OLAP cubes
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Implement data visualization tools for real-time analytics with Django
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contpaqi Senior Software Engineer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Senior Software Engineer</h3>
+                            <p class="text-primary-600 font-semibold">Contpaqi</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Oct 2018 - Jul 2019
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Working in Research and Technology department
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed innovative solutions for financial software
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Create analytics for transactions and user behavior
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Implement machine learning algorithms such as NLP for data analytics
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- HCL Technologies Team Lead -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Team Lead Software Engineer</h3>
+                            <p class="text-primary-600 font-semibold">HCL Technologies</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Jan 2017 - Sep 2018
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Led a team of software engineers in developing enterprise ML applications
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Implemented Agile methodologies to improve project delivery
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed and maintained analytics applications
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Create tools to analyze and improve descriptions for US international Tariff Tables
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- IBM Software Developer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Software Developer CI/CD</h3>
+                            <p class="text-primary-600 font-semibold">IBM</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Feb 2015 - Aug 2016
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Collaborated with several teams to implement CI/CD pipelines
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed analytics tools and dependency analysis for large codebases
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hitts Technologies Software Developer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Software Developer</h3>
+                            <p class="text-primary-600 font-semibold">Hitts Technologies</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Jul 2014 - Feb 2015
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed and maintained enterprise applications using Java for IBM
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Work as L3 support for Rational Jazz Foundation
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Technologies</h2>
+                <p class="text-xl text-gray-600">My technical expertise and tools</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Programming Languages -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-2xl text-primary-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Programming</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Python</span>
+                            <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Java</span>
+                            <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">JavaScript</span>
+                            <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">C++</span>
+                            <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-brain text-2xl text-secondary-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">AI/ML</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">PyTorch</span>
+                            <span class="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">TorchRec</span>
+                            <span class="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">NLP</span>
+                            <span class="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">SYCL</span>
+                            <span class="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-globe text-2xl text-purple-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Web Dev</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Django</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">TypeScript</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">FastAPI</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Flask</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Tools -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cloud text-2xl text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Cloud & Tools</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">AWS</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Docker</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Kubernetes</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Intermediate</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Git</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Education & Certifications</h2>
+                <p class="text-xl text-gray-600">My academic background and professional certifications</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Formal Education -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Formal Education</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-primary-500 pl-6">
+                            <h4 class="text-lg font-semibold text-gray-900">Computer Engineer</h4>
+                            <p class="text-primary-600 font-medium">Autonomous University of Mexico</p>
+                            <p class="text-gray-500 text-sm">2008 - 2013</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Certifications</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Intel Gaudi AI Accelerator</h4>
+                                <p class="text-sm text-gray-600">Intel, 2025</p>
+                                <a href="https://www.credly.com/badges/4ee4adea-9c4c-4983-bd5f-549c795eaa1c/linked_in_profile" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Certificate</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Machine Learning From Data To Decisions</h4>
+                                <p class="text-sm text-gray-600">MIT Professional Education, 2018</p>
+                                <a href="https://www.credential.net/kfzec58v#acc.XgA96V1D" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Badge</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Data Science and Big Data Analytics</h4>
+                                <p class="text-sm text-gray-600">MIT XPro, 2019</p>
+                                <a href="https://certificates.mitxpro.mit.edu/course/89a65334663b4f12ba705077267b94d6.pdf" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Badge</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Quantum Computing Fundamentals</h4>
+                                <p class="text-sm text-gray-600">MIT XPro, 2019</p>
+                                <a href="https://certificates.mitxpro.mit.edu/program/06d55e57adbc4fa7b4d981f5abba3d1e.pdf" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Certificate</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Introduction to Quantum Computing</h4>
+                                <p class="text-sm text-gray-600">MIT XPro, 2019</p>
+                                <a href="https://certificates.mitxpro.mit.edu/course/c1c5462435aa4a938ef6a6f45acd3678.pdf" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Badge</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Quantum Algorithms for Cybersecurity, Chemistry and Optimization</h4>
+                                <p class="text-sm text-gray-600">MIT XPro, 2019</p>
+                                <a href="https://certificates.mitxpro.mit.edu/course/8a9482946655456eb1be0b78a1dbd7b1.pdf" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Badge</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-graduation-cap text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Continuous Learning</h4>
+                                <p class="text-sm text-gray-600">Platzi, Current</p>
+                                <a href="https://platzi.com/p/j3su5pro/" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">Let's connect and discuss opportunities</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary-600 text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <a href="mailto:jesushledon@gmail.com" class="text-primary-600 hover:text-primary-700">jesushledon@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary-600 text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <a href="tel:+525533428574" class="text-primary-600 hover:text-primary-700">+52 5533 428574</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary-600 text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Location</p>
+                                <p class="text-gray-600">Mexico City, Mexico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Connect With Me</h3>
+                    <div class="space-y-4">
+                        <a href="https://github.com/jesushl" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <i class="fab fa-github text-2xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">GitHub</p>
+                                <p class="text-gray-600">github.com/jesushl</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jesusherreraledon/" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <i class="fab fa-linkedin text-2xl mr-4 text-blue-600"></i>
+                            <div>
+                                <p class="font-semibold">LinkedIn</p>
+                                <p class="text-gray-600">jesusherreraledon</p>
+                            </div>
+                        </a>
+                        <a href="https://www.j3su5pro.com" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-globe text-2xl mr-4 text-green-600"></i>
+                            <div>
+                                <p class="font-semibold">Website</p>
+                                <p class="text-gray-600">www.j3su5pro.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg mb-4">Jose de Jesus Herrera Ledon</p>
+            <p class="text-gray-400 mb-6">AI Software Engineer passionate about innovation and technology</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/jesushl" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jesusherreraledon/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="mailto:jesushledon@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 mt-8">&copy; 2025 Jose de Jesus Herrera Ledon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-sm');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Dynamic background effects with Canvas
+        document.addEventListener('DOMContentLoaded', function() {
+            const dynamicSection = document.getElementById('dynamic-transition');
+            const canvas = document.getElementById('binaryCanvas');
+            if (!dynamicSection || !canvas) return;
+
+            // Setup canvas
+            const ctx = canvas.getContext('2d');
+            let canvasWidth, canvasHeight;
+            
+            function resizeCanvas() {
+                const rect = dynamicSection.getBoundingClientRect();
+                canvasWidth = rect.width;
+                canvasHeight = rect.height;
+                canvas.width = canvasWidth;
+                canvas.height = canvasHeight;
+            }
+            
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            // Binary numbers class
+            class BinaryNumber {
+                constructor() {
+                    this.reset();
+                }
+                
+                reset() {
+                    this.x = Math.random() * canvasWidth;
+                    this.y = Math.random() * canvasHeight;
+                    this.value = Math.random() < 0.5 ? '1' : '0';
+                    this.speedX = (Math.random() - 0.5) * 2;
+                    this.speedY = (Math.random() - 0.5) * 2;
+                    this.opacity = 0.3 + Math.random() * 0.4;
+                    this.size = 10 + Math.random() * 8;
+                    this.rotation = Math.random() * 360;
+                    this.rotationSpeed = (Math.random() - 0.5) * 4;
+                }
+                
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+                    this.rotation += this.rotationSpeed;
+                    
+                    // Bounce off edges
+                    if (this.x < 0 || this.x > canvasWidth) this.speedX *= -1;
+                    if (this.y < 0 || this.y > canvasHeight) this.speedY *= -1;
+                    
+                    // Wrap around if goes too far
+                    if (this.x < -50) this.x = canvasWidth + 50;
+                    if (this.x > canvasWidth + 50) this.x = -50;
+                    if (this.y < -50) this.y = canvasHeight + 50;
+                    if (this.y > canvasHeight + 50) this.y = -50;
+                }
+                
+                draw() {
+                    ctx.save();
+                    ctx.globalAlpha = this.opacity;
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                    ctx.font = `${this.size}px monospace`;
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.translate(this.x, this.y);
+                    ctx.rotate(this.rotation * Math.PI / 180);
+                    ctx.fillText(this.value, 0, 0);
+                    ctx.restore();
+                }
+            }
+
+            // Create 100 binary numbers
+            const binaryNumbers = [];
+            for (let i = 0; i < 100; i++) {
+                binaryNumbers.push(new BinaryNumber());
+            }
+
+            // Mouse interaction
+            let mouseX = 0, mouseY = 0;
+            let isMouseInSection = false;
+
+            dynamicSection.addEventListener('mousemove', function(e) {
+                const rect = dynamicSection.getBoundingClientRect();
+                mouseX = e.clientX - rect.left;
+                mouseY = e.clientY - rect.top;
+                isMouseInSection = true;
+            });
+
+            dynamicSection.addEventListener('mouseleave', function() {
+                isMouseInSection = false;
+            });
+
+            // Animation loop
+            function animate() {
+                ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+                
+                binaryNumbers.forEach(number => {
+                    number.update();
+                    
+                    // Enhance numbers near mouse
+                    if (isMouseInSection) {
+                        const distance = Math.sqrt(
+                            Math.pow(mouseX - number.x, 2) + Math.pow(mouseY - number.y, 2)
+                        );
+                        
+                        if (distance < 100) {
+                            const intensity = 1 - (distance / 100);
+                            number.opacity = 0.3 + (intensity * 0.7);
+                            number.size = 10 + (intensity * 10);
+                        } else {
+                            number.opacity = 0.3 + Math.random() * 0.2;
+                            number.size = 10 + Math.random() * 8;
+                        }
+                    }
+                    
+                    number.draw();
+                });
+                
+                requestAnimationFrame(animate);
+            }
+            
+            animate();
+
+            // Create mouse trail particles
+            const trails = [];
+            for (let i = 0; i < 8; i++) {
+                const trail = document.createElement('div');
+                trail.className = 'mouse-trail';
+                trail.style.zIndex = '5';
+                dynamicSection.appendChild(trail);
+                trails.push(trail);
+            }
+
+            let isMoving = false;
+            let moveTimeout;
+
+            // Mouse move event for trail effects
+            dynamicSection.addEventListener('mousemove', function(e) {
+                const rect = dynamicSection.getBoundingClientRect();
+                const trailMouseX = e.clientX - rect.left;
+                const trailMouseY = e.clientY - rect.top;
+
+                // Update trail positions with delay
+                trails.forEach((trail, index) => {
+                    setTimeout(() => {
+                        trail.style.left = trailMouseX + 'px';
+                        trail.style.top = trailMouseY + 'px';
+                        trail.style.opacity = '1';
+                        
+                        // Fade out trail
+                        setTimeout(() => {
+                            trail.style.opacity = '0';
+                        }, 300);
+                    }, index * 50);
+                });
+
+                // Create ripple effect occasionally
+                if (Math.random() < 0.1) {
+                    createRipple(trailMouseX, trailMouseY);
+                }
+
+                // Enhance floating particles near mouse
+                const particles = dynamicSection.querySelectorAll('.floating-particle');
+                particles.forEach(particle => {
+                    const particleRect = particle.getBoundingClientRect();
+                    const particleX = particleRect.left - rect.left + particleRect.width / 2;
+                    const particleY = particleRect.top - rect.top + particleRect.height / 2;
+                    
+                    const distance = Math.sqrt(
+                        Math.pow(trailMouseX - particleX, 2) + Math.pow(trailMouseY - particleY, 2)
+                    );
+                    
+                    if (distance < 80) {
+                        const intensity = 1 - (distance / 80);
+                        particle.style.opacity = 0.6 + (intensity * 0.4);
+                        particle.style.transform = `scale(${1 + (intensity * 0.3)})`;
+                    } else {
+                        particle.style.opacity = '0.6';
+                        particle.style.transform = 'scale(1)';
+                    }
+                });
+            });
+
+            // Create ripple effect
+            function createRipple(x, y) {
+                const ripple = document.createElement('div');
+                ripple.className = 'ripple';
+                ripple.style.left = (x - 100) + 'px';
+                ripple.style.top = (y - 100) + 'px';
+                ripple.style.zIndex = '3';
+                dynamicSection.appendChild(ripple);
+
+                // Remove ripple after animation
+                setTimeout(() => {
+                    ripple.remove();
+                }, 2000);
+            }
+
+            // Mouse leave event
+            dynamicSection.addEventListener('mouseleave', function() {
+                trails.forEach(trail => {
+                    trail.style.opacity = '0';
+                });
+                
+                const particles = dynamicSection.querySelectorAll('.floating-particle');
+                particles.forEach(particle => {
+                    particle.style.opacity = '0.6';
+                    particle.style.transform = 'scale(1)';
+                });
+
+                const numbers = dynamicSection.querySelectorAll('.number-particle');
+                numbers.forEach(number => {
+                    number.style.opacity = '0.4';
+                    number.style.transform = 'scale(1) rotate(0deg)';
+                });
+            });
+
+            // Click effect
+            dynamicSection.addEventListener('click', function(e) {
+                const rect = dynamicSection.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                createRipple(x, y);
+            });
+        });
+
+    </script>
+</body>
+</html>
