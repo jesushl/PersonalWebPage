@@ -1,25 +1,205 @@
-html,body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Roboto", sans-serif;
+/* Custom styles for Jose de Jesus Herrera Ledon's portfolio */
+
+/* Custom gradient backgrounds */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-bg-alt {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Dynamic water wave background for hero section */
+.hero-bg {
+    position: relative;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 25%, #3b82f6 50%, #2563eb 75%, #1d4ed8 100%);
+}
+
+/* Dynamic effects for transition section */
+#dynamic-transition {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Water wave effect */
+.water-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    animation: waveMove 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.water-wave:nth-child(2) {
+    animation-delay: -2s;
+    background: linear-gradient(-45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
+}
+
+.water-wave:nth-child(3) {
+    animation-delay: -4s;
+    background: linear-gradient(90deg, transparent 30%, rgba(255, 255, 255, 0.08) 50%, transparent 70%);
+}
+
+@keyframes waveMove {
+    0%, 100% {
+        transform: translateX(-100%) translateY(0);
+        opacity: 0.3;
     }
-
-#blackImage{
-  background-color: ffffff;
+    50% {
+        transform: translateX(100%) translateY(-20px);
+        opacity: 0.6;
+    }
 }
 
-#name_in_image{
-  color: rgb(220, 216, 240);
-  text-shadow: 2px 2px 5px rgb(11, 136, 125);
-  
+/* Floating particles */
+.floating-particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+    z-index: 2;
+}
+
+.floating-particle:nth-child(1) { width: 4px; height: 4px; top: 15%; left: 10%; animation-delay: 0s; }
+.floating-particle:nth-child(2) { width: 6px; height: 6px; top: 25%; left: 85%; animation-delay: 1s; }
+.floating-particle:nth-child(3) { width: 3px; height: 3px; top: 35%; left: 20%; animation-delay: 2s; }
+.floating-particle:nth-child(4) { width: 5px; height: 5px; top: 45%; left: 70%; animation-delay: 3s; }
+.floating-particle:nth-child(5) { width: 4px; height: 4px; top: 55%; left: 15%; animation-delay: 4s; }
+.floating-particle:nth-child(6) { width: 6px; height: 6px; top: 65%; left: 80%; animation-delay: 5s; }
+.floating-particle:nth-child(7) { width: 3px; height: 3px; top: 75%; left: 30%; animation-delay: 6s; }
+.floating-particle:nth-child(8) { width: 5px; height: 5px; top: 85%; left: 60%; animation-delay: 7s; }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 0.6;
+    }
+    25% {
+        transform: translateY(-20px) translateX(10px);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-10px) translateX(-5px);
+        opacity: 0.4;
+    }
+    75% {
+        transform: translateY(-15px) translateX(15px);
+        opacity: 0.7;
+    }
+}
+
+/* Mouse trail particles */
+.mouse-trail {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Ripple effect */
+.ripple {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    animation: rippleExpand 2s ease-out;
+}
+
+@keyframes rippleExpand {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        transform: scale(1);
+    }
 }
 
 
-#main_name{
-  color: rgb(5, 118, 122);
-  text-shadow: 2px 2px 5px rgb(11, 136, 125);
-  text-align: center;
+
+/* Card hover effects */
+.card-hover {
+    transition: all 0.3s ease;
 }
 
-.social_networks{
-  
-  padding-right: 100px;
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Skill bar animations */
+.skill-bar {
+    transition: width 1s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom focus styles */
+.focus-ring:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .gradient-bg {
+        background: white !important;
+        color: black !important;
+    }
 }
