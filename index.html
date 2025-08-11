@@ -79,41 +79,29 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="circuit-bg text-white py-20 relative">
-        <!-- Circuit nodes -->
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        <div class="circuit-node"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="hero" class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <h1 class="text-5xl font-bold mb-4">Jose de Jesus Herrera Ledon</h1>
-                    <h2 class="text-2xl font-semibold mb-6 text-cyan-300">AI Software Engineer at Intel</h2>
-                    <p class="text-lg mb-8 text-cyan-100">
+                    <h2 class="text-2xl font-semibold mb-6 text-blue-200">AI Software Engineer at Intel</h2>
+                    <p class="text-lg mb-8 text-blue-100">
                         Specialized in high-performance computing, PyTorch, TorchRec, and quantum computing. 
                         Passionate about developing cutting-edge AI solutions and contributing to open-source projects.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#contact" class="bg-cyan-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-cyan-600 transition-colors shadow-lg">
+                        <a href="#contact" class="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                             Get in Touch
                         </a>
-                        <a href="#experience" class="border-2 border-cyan-400 text-cyan-300 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-400 hover:text-gray-900 transition-colors">
+                        <a href="#experience" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
                             View Experience
                         </a>
                     </div>
                 </div>
                 <div class="flex justify-center">
                     <div class="relative">
-                        <img src="images/me.jpg" alt="Jose de Jesus Herrera Ledon" class="w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-cyan-400">
-                        <div class="absolute -bottom-4 -right-4 bg-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                        <img src="images/me.jpg" alt="Jose de Jesus Herrera Ledon" class="w-80 h-80 rounded-full object-cover shadow-2xl">
+                        <div class="absolute -bottom-4 -right-4 bg-secondary-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
                             <i class="fas fa-robot mr-2"></i>AI Engineer
                         </div>
                     </div>
@@ -579,83 +567,7 @@
             }
         });
 
-        // Circuit board mouse trail effect
-        document.addEventListener('DOMContentLoaded', function() {
-            const heroSection = document.getElementById('hero');
-            if (!heroSection) return;
 
-            // Create trail elements
-            const trails = [];
-            for (let i = 0; i < 5; i++) {
-                const trail = document.createElement('div');
-                trail.className = 'circuit-trail';
-                trail.style.zIndex = '5';
-                heroSection.appendChild(trail);
-                trails.push(trail);
-            }
-
-            let mouseX = 0;
-            let mouseY = 0;
-            let trailIndex = 0;
-
-            // Mouse move event
-            heroSection.addEventListener('mousemove', function(e) {
-                const rect = heroSection.getBoundingClientRect();
-                mouseX = e.clientX - rect.left;
-                mouseY = e.clientY - rect.top;
-
-                // Update trail positions
-                trails.forEach((trail, index) => {
-                    setTimeout(() => {
-                        trail.style.left = mouseX + 'px';
-                        trail.style.top = mouseY + 'px';
-                        trail.style.opacity = '1';
-                        
-                        // Fade out trail
-                        setTimeout(() => {
-                            trail.style.opacity = '0';
-                        }, 200);
-                    }, index * 50);
-                });
-
-                // Enhance circuit nodes near mouse
-                const nodes = heroSection.querySelectorAll('.circuit-node');
-                nodes.forEach(node => {
-                    const nodeRect = node.getBoundingClientRect();
-                    const nodeX = nodeRect.left - rect.left + nodeRect.width / 2;
-                    const nodeY = nodeRect.top - rect.top + nodeRect.height / 2;
-                    
-                    const distance = Math.sqrt(
-                        Math.pow(mouseX - nodeX, 2) + Math.pow(mouseY - nodeY, 2)
-                    );
-                    
-                    if (distance < 100) {
-                        const intensity = 1 - (distance / 100);
-                        node.style.opacity = 0.8 + (intensity * 0.2);
-                        node.style.boxShadow = `0 0 ${25 + (intensity * 25)}px #ffffff, 0 0 ${50 + (intensity * 50)}px #00d4ff`;
-                        node.style.transform = `scale(${1 + (intensity * 0.5)})`;
-                    } else {
-                        node.style.opacity = '0.8';
-                        node.style.boxShadow = '0 0 15px #ffffff, 0 0 30px #00d4ff';
-                        node.style.transform = 'scale(1)';
-                    }
-                });
-            });
-
-            // Mouse leave event
-            heroSection.addEventListener('mouseleave', function() {
-                trails.forEach(trail => {
-                    trail.style.opacity = '0';
-                });
-                
-                const nodes = heroSection.querySelectorAll('.circuit-node');
-                nodes.forEach(node => {
-                    node.style.opacity = '0.8';
-                    node.style.boxShadow = '0 0 15px #ffffff, 0 0 30px #00d4ff';
-                    node.style.transform = 'scale(1)';
-                });
-            });
-        });
     </script>
 </body>
 </html>
