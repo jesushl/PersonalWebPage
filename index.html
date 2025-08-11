@@ -1,448 +1,661 @@
 <!DOCTYPE html>
-<html>
-  <head>
-<title>Jose de Jesus Herrera Ledon</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta name="description" content="Jose de Jesus Herrera Ledon, Resume.
-Jesus is a Software Engineer with strong machine learning habilities.
-He ">
-
-<link rel="icon" type="image/c-icon" href="/images/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/page.css">
-
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose de Jesus Herrera Ledon - AI Software Engineer</title>
+    <meta name="description" content="AI Software Engineer at Intel with expertise in PyTorch, TorchRec, and high-performance computing. Specialized in machine learning, quantum computing, and cloud technologies.">
+    
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': {
+                            50: '#f0f9ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        },
+                        'secondary': {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+    </style>
 </head>
-<body class="w3-light-grey">
-
-  <!-- Page Container -->
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-      <!-- Left Column -->
-      <div class="w3-third">
-
-        <div class="w3-white w3-text-grey w3-card-4">
-          <div class="w3-display-container">
-            <img src="images/me.jpg" style="width:100%" alt="Avatar">
-            <div class="w3-display-bottomleft w3-container w3-text-black">
-              <h5>
-                <p id="name_in_image"> Jose de Jesus Herrera Ledon <i class="fa fa-lightbulb-o" aria-hidden="true"></i></p> 
-                
-              </h5>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-primary-600">J3SU5</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#about" class="text-gray-700 hover:text-primary-600 transition-colors">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-primary-600 transition-colors">Experience</a>
+                    <a href="#skills" class="text-gray-700 hover:text-primary-600 transition-colors">Skills</a>
+                    <a href="#education" class="text-gray-700 hover:text-primary-600 transition-colors">Education</a>
+                    <a href="#contact" class="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors">Contact</a>
+                </div>
             </div>
-          </div>
-          <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><a target="_blank" href="https://goo.gl/maps/jDbiroJYXw5Ekwxh6">Mexico City, Mexico</a></p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jesushledon@gmail.com</p>
-            <p><i class="fa fa-whatsapp fa-fw w3-margin-right w3-large w3-text-teal"></i>(+521) 5533 428574</p>
-            <p><i class="fa fa-github-alt fa-fw w3-margin-right w3-large w3-text-teal"></i>Github <a
-              target="_blank"  href="https://github.com/jesushl">https://github.com/jesushl</a></p>
-            <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a
-                target="_blank" href="https://www.linkedin.com/in/jesusherreraledon/">Linkedin </a></p>
-            <hr>
-
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills </b></p>
-            <p>Python </p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">Good</div>
-            </div>
-            <p>Java </p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">
-                <div class="w3-center w3-text-white">Good</div>
-              </div>
-            </div>
-            <p> Shell Script</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">Good</div>
-            </div>
-            <p> Java Script</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">Average</div>
-            </div>
-
-
-            <p class="w3-large w3-text-theme"><b><i
-                  class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-            <p>Spanish</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:100%">Native</div>
-            </div>
-            <p>English</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:85%">Good</div>
-            </div>
-            <br>
-          </div>
-        </div><br>
-
-        <!-- End Left Column -->
-      </div>
-
-      <!-- Right Column -->
-      <div class="w3-twothird">
-        <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-          <h1 id="main_name"> 
-            Jose de Jesus Herrera Ledon
-          </h1>
-          <h2 class="w3-text-grey w3-padding-16">
-            
-            <i class="fa fa-stack-overflow fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>AI Software Engineer</h2>
-          <div class="w3-container">
-            
-            <h5>
-              <b>Profile : </b> Software Engineer / AI / ML  <i class="fa fa-flask" aria-hidden="true"></i><br>
-              <br>
-
-            </h5>
-            <b class="w3-opacity"><i class="fa fa-users" aria-hidden="true"></i> Achivements : </b>
-            <ul>
-              <li> I work on the re desighn and implementation of a big analycs tool at intel to help support management planing at intel</li>
-              <li>Won contract to HCL Technologies in FedEx Global analytics challenge and start a
-              new division of Analytics in HCL Technologies Mexico</li>
-              <li>Applied Machine Learning on international shipment process in a global company  </li>
-              <li> Design and develop natural language models and learning process to automatically
-                fill <a target="_blank" href="https://www.usitc.gov/tata/hts/index.htm"> Official Harmonized Tariff </a> forms for international shipment </li>
-            </ul>
-            <b class="w3-opacity"><i class="fa fa-code" aria-hidden="true"></i> Programing Languages: </b>
-            <ul>
-              <li>Python</li>
-              <li>Java</li>
-              <li>Java Script</li>
-              <li>Shell Script</li>
-            </ul>
-            <div class="container">
-              <div class="row">
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <th><b class="w3-opacity ">Data Bases</b></th>
-                      <th>MySQL, MongoDB, Maria DB</th>
-                      <th> <i class="fa fa-database" aria-hidden="true"></i></th>
-                    </tr>
-                    <tr>
-                      <th> <b class="w3-opacity ">Operative Systems</b> </th>
-                      <th> W11, Ubuntu </th>
-                      <th><i class="fa fa-linux" aria-hidden="true"></i></th>
-                    </tr>
-                    <tr>
-                      <th> <b class="w3-opacity"> Cloud </b></th>
-                      <th> AWS : Lambda, EC2, EMR, W3, IAM, Alexa, VPC, Lex, Connect </th>
-                      <th><i class="fa fa fa-amazon fa-fw  w3-large w3-text-teal"></i></th>              
-                    </tr>
-                    <tr>
-                      <th></th>
-                      <th> Azure : ML, Storage, VSCode extension </th>
-                      <th> <i class="fa fa-windows" aria-hidden="true"></i></th>
-                    </tr>
-
-                  </tbody>
-
-                </table>
-              </div>
-            </div>
-
-
-            <ul>
-              <li>
-                5+ Years Java  (Oracle Certificated)
-              </li>
-              <li>
-                8+ Years Python
-              </li>
-            </ul>
-          </div>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="circuit-bg text-white py-20 relative">
+        <!-- Circuit nodes -->
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
+        <div class="circuit-node"></div>
         
-        <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-history w3-margin-right w3-xxlarge w3-text-teal" aria-hidden="true"></i> Relevant Work Experience</h2>
-            <!-- Start experience-->
-            <div class="w3-container">
-              <h5 ><img src="images/intel.jpeg" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                <b>AI Software Engineer <i class="fa fa-location-arrow" aria-hidden="true"></i> 
-                  <a target="_blank" href="https://www.intel.com/">Intel</a></b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2022 - Current</h6>
-              <p></p>
-              <ul>
-                <li>
-                  AI Sofwere Engineer, work on Gaudi 
-                </li>
-                <li> AI Tools VSCode extension </li>
-                <li> Develop tools and POCs to help automate provisioning machines inside Intel to automate 
-                   AI GitHub actions validations </li>
-                <li>
-                  Proof of concept (POC)
-                </li>
-
-              </ul>
-              <h6 class="w3-opacity"> Functional Experience: </h6>Python3, Typescript, Github Actions, Tensorflow, Pytorch, Gaudi, Kubernetes
-              <hr>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold mb-4">Jose de Jesus Herrera Ledon</h1>
+                    <h2 class="text-2xl font-semibold mb-6 text-cyan-300">AI Software Engineer at Intel</h2>
+                    <p class="text-lg mb-8 text-cyan-100">
+                        Specialized in high-performance computing, PyTorch, TorchRec, and quantum computing. 
+                        Passionate about developing cutting-edge AI solutions and contributing to open-source projects.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-cyan-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-cyan-600 transition-colors shadow-lg">
+                            Get in Touch
+                        </a>
+                        <a href="#experience" class="border-2 border-cyan-400 text-cyan-300 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-400 hover:text-gray-900 transition-colors">
+                            View Experience
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img src="images/me.jpg" alt="Jose de Jesus Herrera Ledon" class="w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-cyan-400">
+                        <div class="absolute -bottom-4 -right-4 bg-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                            <i class="fas fa-robot mr-2"></i>AI Engineer
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- End of experience-->
-            <!-- Start experience-->
-            <div class="w3-container">
-              <h5 ><img src="images/umba.webp" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                <b>Software Engineer <i class="fa fa-location-arrow" aria-hidden="true"></i> 
-                  <a target="_blank" href="https://www.intel.com/">Umba</a></b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - Jul 2021</h6>
-              <p></p>
-              <ul>
-                <li>
-                  Customer Experience Engineer
-                </li>
-                <li> Support analytics for umba bank </li>
-                <li> Develop tools for customer experience to solve customer issues </li>
-                <li>
-                  Proof of concepts (POC)
-                </li>
-
-              </ul>
-              <h6 class="w3-opacity"> Functional Experience: </h6>Python3, Flask, PostgreQL, 
-              <hr>
-            </div>
-            <!-- End of experience-->
-            
-            <!-- Intel experience -->
-            <div class="w3-container">
-              <h5 ><img src="images/intel.jpeg" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                <b>Software Engineer <i class="fa fa-location-arrow" aria-hidden="true"></i> 
-                  <a target="_blank" href="https://www.intel.com/">Intel</a></b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - Jul 2021</h6>
-              <p></p>
-              <ul>
-                <li>
-                  Analitycs
-                </li>
-                <li> Support analytics for company  </li>
-                <li> Natural Language Processing </li>
-                <li>
-                  Proof of concepts (POC)
-                </li>
-
-              </ul>
-              <h6 class="w3-opacity"> Functional Experience: </h6>Python 3, Mongo DB, MySQL, Bash Script, GIT.
-              <hr>
-            </div>
-            <!-- End of experience-->
-              <div class="w3-container">
-                <h5 ><img src="/images/knowitive.jpeg" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                  <b>Fullstack Developer <i class="fa fa-location-arrow" aria-hidden="true"></i> <a target="_blank" href="https://www.knowitive.com/">Knowitive.ia</a></b></h5>
-                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Oct 2018 - Jul 2019</h6>
-                <p></p>
-                <ul>
-                  <li>
-                    Machine learning as a cloud service
-                  </li>
-                  <li>Infrastructure designer </li>
-                  <li>Spanish Natural Language Processing </li>
-                  <li>
-                    Proof of concepts (POC)
-                  </li>
-
-                </ul>
-                <h6 class="w3-opacity"> Functional Experience: </h6>Python 3, Mongo DB, Apache HBase, Java, Bash Script, GIT, AWS cloud technologies.
-                <hr>
-              </div>
-
-
-              <div class="w3-container">
-                <h5 ><img src="images/HCL.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                  <b>Technical Lead <i class="fa fa-location-arrow" aria-hidden="true"></i><a target="_blank" href="https://www.hcltech.com/geo-presence/united-states">  HCL Technologies</a> <i class="fa fa-link" aria-hidden="true"></i> FedEx Global</b></h5>
-                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2017 - Sep 2018 </h6>
-                <p></p>
-                <ul>
-                  <li>
-                  Technical leader in proof of concept for global analysis and automatic learning of FedEx international shipping.
-                  Processing of natural language (English) in the definitions of international products.
-                  Search engine and catalog relation to the international product definition and shipping documentation
-                  (International trade documentation).
-                  </li>
-                  <li>
-                    Proof of concepts (POC) by machine learning technologies and models
-                  </li>
-                  <li>
-                    Python analytics : NLP (nltk), Pandas, Jupiter, TensorFlow
-                  </li>
-                </ul>
-                <h6 class="w3-opacity"> Functional Experience: </h6>Python 3, Bash Script, GIT, pytorch, TensorFlow, Pandas
-                <hr>
-              </div>
-
-
-            <div class="w3-container">
-            <h5 ><img src="images/HCL.png" class="w3-left w3-circle w3-margin-right"
-                style="width:50px"> <b>Senior Developer <i class="fa fa-location-arrow" aria-hidden="true"></i><a target="_blank" href=https://www.hcltech.com/geo-presence/mexico> HCL Technologies </a> <i class="fa fa-link" aria-hidden="true"></i> FedEx Global</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - Nov 2017 </h6>
-            <p></p>
-            <ul>
-              <li>
-                Senior analytical solutions developer for FedEx Global.
-                Design and implementation of software in natural language analysis (English)
-               <br>
-                Working under the tutelage of Sc.D. Miguel Morales and Sc.D. Carlos castaneñeda on analytics to emprove
-                FedEx international shipping process
-                using nlp to associate products to goverment international tariff descriptions and FedEx current
-                descriptions
-              </li>
-              <li>
-                Proof of concept (POC) and API developer
-              </li>
-              <li>
-                Python analytics : Natural Language Processing , Pandas, Jupiter, Pytorch
-              </li>
-            </ul>
-            <h6 class="w3-opacity"> Functional Experience: </h6>Java EE, Python, Bash Script, GIT, Red Had Server,
-            Hortonworks, Hadoop
-            <hr>
-          </div>
-
-          <div class="w3-container">
-            <h5 ><img src="images/HCL.png" class="w3-left w3-circle w3-margin-right"
-                style="width:50px"> <b>Senior Developer <i class="fa fa-location-arrow" aria-hidden="true"></i> <a target="_blank" href="https://www.hcltech.com/geo-presence/mexico">HCL Technologies</a> <i class="fa fa-link" aria-hidden="true"></i> <a target="_blank" href="https://www.usaa.com"> USAA </a>  </b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Jun 2017</h6>
-            <p>Java and Python developer on HCL Business intelligence unit, working in hadoop migrations for cobol
-              databases in USAA bank</p>
-            <ul>
-              <li>
-                Python developer, focus in improve mapreduce operation over Hortonworks
-              </li>
-              <li>
-                Java developer for automation tools and mapreduce process
-              </li>
-            </ul>
-            <h6 class="w3-opacity"> Functional Experience: </h6>Java EE, Python, Bash Script, GIT, Red Had Server,
-            Hortonworks, Hadoop
-            <hr>
-          </div>
-          <!-- Release Engineer-->
-          <div class="w3-container">
-            <h5 ><img src="images/ibm.png" class="w3-left w3-circle w3-margin-right"
-                style="width:50px"><b><a target="_blank" href="https://jazz.net/deployment-wiki-home.jsp">Build And Release Engineer</a> <i class="fa fa-location-arrow" aria-hidden="true"></i> IBM </b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2015 - Sep 2016</h6>
-            <p> Builder of  <a target="_blank" href="https://en.wikipedia.org/wiki/Rational_Software_Architect"></a> Rational Software Architect (RSA) </p>
-            <ul>
-              <li>
-                Development of analytic software for architecture in continuous integration.
-              </li>
-              <li>
-                Maintenance, support and builds of Rational Software Architect
-              </li>
-              <li>
-                Make Tools for build maintenance and management in ant, python, shell script and java.
-              </li>
-            </ul>
-            <h6 class="w3-opacity"> Functional Experience: </h6>Java, Python, Bash Script, Red Had Server
-            Administration, ANT, CCB
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 >
-              <img src="images/hitss.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-              <b>Software Developer <i class="fa fa-location-arrow" aria-hidden="true"></i> <a target="_blank" href="https://www.globalhitss.com/">Gobal HITTS</a>
-                <i class="fa fa-link" aria-hidden="true"></i> IBM </b>
-            </h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2014 - Feb 2015</h6>
-            <p><a target="_blank" href="https://jazz.net/"> Jazz Foundation</a> (<a target="_blank" href="https://jazz.net/products/rational-team-concert/"> Team Concert</a> core) support level 3 </p>
-            <ul>
-              <li>
-                <a target="_blank" href="https://jazz.net/products/jazz-foundation"> Jazz Foundation </a> support applications, UI, Server and DB
-              </li>
-              <li>
-                Research and fix reported issues
-              </li>
-              <li><a target="_blank" href="https://jazz.net/products"> https://jazz.net/products</a></li>
-            </ul>
-            <h6 class="w3-opacity"> Functional Experience: </h6>Java EE, Java Script (Dojo), Rational Team Concert.
-          </div>
         </div>
+    </section>
 
-        <div class="w3-container w3-card-2 w3-white">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-          <div class="w3-container">
-            <h5 >
-              <img src="images/unam.jpg" class="w3-left w3-circle w3-margin-right" style="width:50px">
-              <b>
-                <a target="_blank" href="http://english.unam.mx/">Autonomus University Of Mexico UNAM </a>
-              </b>
-            </h5>
-            <h3> <b> Computer Engineer </b>
-            </h3>
-            <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right">
-
-              </i>
-              2008 - 2013
-            </h6> 
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    I'm an AI Software Engineer with over 8 years of experience in software development, 
+                    specializing in machine learning, quantum computing, and high-performance computing. 
+                    Currently working at Intel, I contribute to open-source AI frameworks and develop 
+                    cutting-edge solutions for the future of computing.
+                </p>
+            </div>
             
-
-
-            <hr>
-          </div>
-
-          <div class="w3-container">
-            <h5 ><b>
-                <img src="images/mit.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                <a target="_blank" href="https://www.credential.net/kfzec58v">MIT Professional Education</a></b></h5>
-
-            <p><a target="_blank" href="https://www.credential.net/kfzec58v">Machine Learning From Data to  Decisions </a></p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 ><b>
-                <img src="images/mitXpro.jpg" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                <a target="_blank" href="https://mitxpro.mit.edu/certificates/89a65334663b4f12ba705077267b94d6">MIT xPRO</b></h5>
-            <br>
-            <p><a target="_blank" href="https://mitxpro.mit.edu/certificates/89a65334663b4f12ba705077267b94d6">Data Science and Big Data Analytics: Making Data-Driven Decisions </a></p>
-
-            <p><a target="_blank"  href="https://mitxpro.mit.edu/certificates/c1c5462435aa4a938ef6a6f45acd3678">Introduction to Quantum Computing</a></p>
-
-            <p><a target="_blank" href="https://mitxpro.mit.edu/certificates/8a9482946655456eb1be0b78a1dbd7b1">Quantum Algorithms for Cybersecurity, Chemistry, and Optimization</a></p>
-
-            <p><a target="_blank" href="https://certificates.mitxpro.mit.edu/credentials/06d55e57adbc4fa7b4d981f5abba3d1e/?_ga=2.137799350.724217679.1566923595-628702245.1566923595">Quantum Computing Fundamentals Online Program</a></p>
-
-          </div>
-
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>
-                <img src="images/platzi.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
-                <a target="_blank" href="https://platzi.com/p/j3su5pro/">PLATZI</a></b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> <a href="https://platzi.com/p/j3su5pro/" target="_blank">Continuos development </a></h6>
-            <p>Backend Developement  Python - Django </p>
-            <p>Data Science</p>
-            <p>Artificial Intelligence</p>
-            <hr>
-          </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI & ML</h3>
+                    <p class="text-gray-600">Expert in PyTorch, TorchRec, and developing AI frameworks for high-performance computing.</p>
+                </div>
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-code text-2xl text-secondary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Software Development</h3>
+                    <p class="text-gray-600">Full-stack development with Python, Java, JavaScript, and modern web technologies.</p>
+                </div>
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-atom text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Quantum Computing</h3>
+                    <p class="text-gray-600">Certified in quantum algorithms for cybersecurity, chemistry, and optimization.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- End Right Column -->
-      </div>
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+                <p class="text-xl text-gray-600">My journey in software engineering and AI development</p>
+            </div>
+            
+            <div class="space-y-8">
+                <!-- Intel AI Software Engineer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">AI Software Engineer</h3>
+                            <p class="text-primary-600 font-semibold">Intel</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Aug 2022 - Present
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed and optimized AI frameworks for high-performance computing
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Contributed to open-source projects, enhancing community collaboration
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Implemented gemm XPU for Torchrec, improving performance on Intel GPUs
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            VSCode extension development for Intel AI tools, enhancing developer experience
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Lead of Cloud Data Connector library, integrating with various cloud platforms
+                        </li>
+                    </ul>
+                </div>
 
-      <!-- End Grid -->
-    </div>
+                <!-- UMBA Senior Software Engineer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Senior Software Engineer</h3>
+                            <p class="text-primary-600 font-semibold">UMBA</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Jul 2021 - Aug 2022
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed and maintained web applications using Flask and TypeScript
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Team lead of customer experience team, focusing on enhancing user engagement
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Creating and maintaining RESTful APIs for transactions and data processing
+                        </li>
+                    </ul>
+                </div>
 
-    <!-- End Page Container -->
-  </div>
+                <!-- Intel Senior Software Engineer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Senior Software Engineer</h3>
+                            <p class="text-primary-600 font-semibold">Intel</p>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Nov 2019 - Jul 2021
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developed software for quality and business intelligence
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Design and implementation of data pipelines for large-scale data processing
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Implement data visualization tools for real-time analytics with Django
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer class="w3-container w3-teal w3-center w3-margin-top">
-    <h2><p>Find me on social media.</p></h2>
-    <h3>
-      
-      <a target="_blank" href="https://www.facebook.com/J3su5.pro"><i class="fa fa-facebook-official w3-hover-opacity social_networks"></i></a>
-      <a target="_blank" href="https://twitter.com/j3su5pro"><i class="fa fa-twitter w3-hover-opacity social_networks"></i></a>
-      <a target="_blank" href="https://www.linkedin.com/in/jesusherreraledon/"><i class="fa fa-linkedin w3-hover-opacity social_networks"></i></a>
-      <a target="_blank" href="https://open.spotify.com/user/g34533420093"><i class="fa fa-spotify social_networks" aria-hidden="true"></i> </a>
-    </h3>
-  </footer>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Technologies</h2>
+                <p class="text-xl text-gray-600">My technical expertise and tools</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Programming Languages -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-2xl text-primary-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Programming</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Python</span>
+                            <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Java</span>
+                            <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">JavaScript</span>
+                            <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">C++</span>
+                            <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- AI/ML -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-brain text-2xl text-secondary-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">AI/ML</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">PyTorch</span>
+                            <span class="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">TorchRec</span>
+                            <span class="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">NLP</span>
+                            <span class="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">SYCL</span>
+                            <span class="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-globe text-2xl text-purple-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Web Dev</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Django</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">TypeScript</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">FastAPI</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Flask</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Tools -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cloud text-2xl text-blue-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Cloud & Tools</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">AWS</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Docker</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Kubernetes</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Intermediate</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-medium">Git</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Education & Certifications</h2>
+                <p class="text-xl text-gray-600">My academic background and professional certifications</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Formal Education -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Formal Education</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-primary-500 pl-6">
+                            <h4 class="text-lg font-semibold text-gray-900">Computer Engineer</h4>
+                            <p class="text-primary-600 font-medium">Autonomous University of Mexico</p>
+                            <p class="text-gray-500 text-sm">2008 - 2013</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Certifications</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Intel Gaudi AI Accelerator</h4>
+                                <p class="text-sm text-gray-600">Intel, 2025</p>
+                                <a href="https://www.credly.com/badges/4ee4adea-9c4c-4983-bd5f-549c795eaa1c/linked_in_profile" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Certificate</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Machine Learning From Data To Decisions</h4>
+                                <p class="text-sm text-gray-600">MIT Professional Education, 2018</p>
+                                <a href="https://www.credential.net/kfzec58v#acc.XgA96V1D" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Badge</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Data Science and Big Data Analytics</h4>
+                                <p class="text-sm text-gray-600">MIT XPro, 2019</p>
+                                <a href="https://certificates.mitxpro.mit.edu/course/89a65334663b4f12ba705077267b94d6.pdf" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Badge</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Quantum Computing Fundamentals</h4>
+                                <p class="text-sm text-gray-600">MIT XPro, 2019</p>
+                                <a href="https://certificates.mitxpro.mit.edu/program/06d55e57adbc4fa7b4d981f5abba3d1e.pdf" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Certificate</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Introduction to Quantum Computing</h4>
+                                <p class="text-sm text-gray-600">MIT XPro, 2019</p>
+                                <a href="https://certificates.mitxpro.mit.edu/course/c1c5462435aa4a938ef6a6f45acd3678.pdf" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Badge</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-secondary-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Quantum Algorithms for Cybersecurity, Chemistry and Optimization</h4>
+                                <p class="text-sm text-gray-600">MIT XPro, 2019</p>
+                                <a href="https://certificates.mitxpro.mit.edu/course/8a9482946655456eb1be0b78a1dbd7b1.pdf" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Badge</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-graduation-cap text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">Continuous Learning</h4>
+                                <p class="text-sm text-gray-600">Platzi, Current</p>
+                                <a href="https://platzi.com/p/j3su5pro/" target="_blank" class="text-primary-600 hover:text-primary-700 text-xs">View Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">Let's connect and discuss opportunities</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary-600 text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <a href="mailto:jesushledon@gmail.com" class="text-primary-600 hover:text-primary-700">jesushledon@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary-600 text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <a href="tel:+525533428574" class="text-primary-600 hover:text-primary-700">+52 5533 428574</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary-600 text-xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Location</p>
+                                <p class="text-gray-600">Mexico City, Mexico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Connect With Me</h3>
+                    <div class="space-y-4">
+                        <a href="https://github.com/jesushl" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <i class="fab fa-github text-2xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">GitHub</p>
+                                <p class="text-gray-600">github.com/jesushl</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jesusherreraledon/" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <i class="fab fa-linkedin text-2xl mr-4 text-blue-600"></i>
+                            <div>
+                                <p class="font-semibold">LinkedIn</p>
+                                <p class="text-gray-600">jesusherreraledon</p>
+                            </div>
+                        </a>
+                        <a href="https://www.j3su5pro.com" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-globe text-2xl mr-4 text-green-600"></i>
+                            <div>
+                                <p class="font-semibold">Website</p>
+                                <p class="text-gray-600">www.j3su5pro.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg mb-4">Jose de Jesus Herrera Ledon</p>
+            <p class="text-gray-400 mb-6">AI Software Engineer passionate about innovation and technology</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/jesushl" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jesusherreraledon/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="mailto:jesushledon@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 mt-8">&copy; 2025 Jose de Jesus Herrera Ledon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-sm');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Circuit board mouse trail effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroSection = document.getElementById('hero');
+            if (!heroSection) return;
+
+            // Create trail elements
+            const trails = [];
+            for (let i = 0; i < 5; i++) {
+                const trail = document.createElement('div');
+                trail.className = 'circuit-trail';
+                trail.style.zIndex = '5';
+                heroSection.appendChild(trail);
+                trails.push(trail);
+            }
+
+            let mouseX = 0;
+            let mouseY = 0;
+            let trailIndex = 0;
+
+            // Mouse move event
+            heroSection.addEventListener('mousemove', function(e) {
+                const rect = heroSection.getBoundingClientRect();
+                mouseX = e.clientX - rect.left;
+                mouseY = e.clientY - rect.top;
+
+                // Update trail positions
+                trails.forEach((trail, index) => {
+                    setTimeout(() => {
+                        trail.style.left = mouseX + 'px';
+                        trail.style.top = mouseY + 'px';
+                        trail.style.opacity = '1';
+                        
+                        // Fade out trail
+                        setTimeout(() => {
+                            trail.style.opacity = '0';
+                        }, 200);
+                    }, index * 50);
+                });
+
+                // Enhance circuit nodes near mouse
+                const nodes = heroSection.querySelectorAll('.circuit-node');
+                nodes.forEach(node => {
+                    const nodeRect = node.getBoundingClientRect();
+                    const nodeX = nodeRect.left - rect.left + nodeRect.width / 2;
+                    const nodeY = nodeRect.top - rect.top + nodeRect.height / 2;
+                    
+                    const distance = Math.sqrt(
+                        Math.pow(mouseX - nodeX, 2) + Math.pow(mouseY - nodeY, 2)
+                    );
+                    
+                    if (distance < 100) {
+                        const intensity = 1 - (distance / 100);
+                        node.style.opacity = 0.8 + (intensity * 0.2);
+                        node.style.boxShadow = `0 0 ${25 + (intensity * 25)}px #ffffff, 0 0 ${50 + (intensity * 50)}px #00d4ff`;
+                        node.style.transform = `scale(${1 + (intensity * 0.5)})`;
+                    } else {
+                        node.style.opacity = '0.8';
+                        node.style.boxShadow = '0 0 15px #ffffff, 0 0 30px #00d4ff';
+                        node.style.transform = 'scale(1)';
+                    }
+                });
+            });
+
+            // Mouse leave event
+            heroSection.addEventListener('mouseleave', function() {
+                trails.forEach(trail => {
+                    trail.style.opacity = '0';
+                });
+                
+                const nodes = heroSection.querySelectorAll('.circuit-node');
+                nodes.forEach(node => {
+                    node.style.opacity = '0.8';
+                    node.style.boxShadow = '0 0 15px #ffffff, 0 0 30px #00d4ff';
+                    node.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>

@@ -1,25 +1,199 @@
-html,body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Roboto", sans-serif;
+/* Custom styles for Jose de Jesus Herrera Ledon's portfolio */
+
+/* Custom gradient backgrounds */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-bg-alt {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Circuit board background for hero section */
+.circuit-bg {
+    position: relative;
+    background: 
+        /* Base gradient */
+        linear-gradient(135deg, #1e3a8a 0%, #1e40af 25%, #3b82f6 50%, #2563eb 75%, #1d4ed8 100%),
+        /* Circuit pattern - Horizontal lines */
+        linear-gradient(90deg, transparent 0%, transparent 40%, #ffffff 40%, #ffffff 42%, transparent 42%, transparent 60%, #ffffff 60%, #ffffff 62%, transparent 62%, transparent 100%),
+        linear-gradient(90deg, transparent 0%, transparent 20%, #ffffff 20%, #ffffff 22%, transparent 22%, transparent 80%, #ffffff 80%, #ffffff 82%, transparent 82%, transparent 100%),
+        linear-gradient(90deg, transparent 0%, transparent 10%, #ffffff 10%, #ffffff 12%, transparent 12%, transparent 90%, #ffffff 90%, #ffffff 92%, transparent 92%, transparent 100%),
+        /* Circuit pattern - Vertical lines */
+        linear-gradient(0deg, transparent 0%, transparent 30%, #ffffff 30%, #ffffff 32%, transparent 32%, transparent 70%, #ffffff 70%, #ffffff 72%, transparent 72%, transparent 100%),
+        linear-gradient(0deg, transparent 0%, transparent 50%, #ffffff 50%, #ffffff 52%, transparent 52%, transparent 100%),
+        linear-gradient(0deg, transparent 0%, transparent 15%, #ffffff 15%, #ffffff 17%, transparent 17%, transparent 85%, #ffffff 85%, #ffffff 87%, transparent 87%, transparent 100%);
+    background-size: 
+        auto,
+        200px 200px,
+        150px 150px,
+        100px 100px,
+        200px 200px,
+        150px 150px,
+        100px 100px;
+    background-position: 
+        0 0,
+        0 0,
+        50px 50px,
+        25px 25px,
+        0 0,
+        75px 75px,
+        50px 50px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Circuit nodes */
+.circuit-node {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #ffffff, 0 0 30px #00d4ff;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.circuit-node:nth-child(1) { top: 20%; left: 15%; }
+.circuit-node:nth-child(2) { top: 35%; left: 45%; }
+.circuit-node:nth-child(3) { top: 60%; left: 25%; }
+.circuit-node:nth-child(4) { top: 80%; left: 65%; }
+.circuit-node:nth-child(5) { top: 25%; left: 75%; }
+.circuit-node:nth-child(6) { top: 70%; left: 85%; }
+.circuit-node:nth-child(7) { top: 45%; left: 5%; }
+.circuit-node:nth-child(8) { top: 15%; left: 55%; }
+.circuit-node:nth-child(9) { top: 85%; left: 35%; }
+.circuit-node:nth-child(10) { top: 55%; left: 95%; }
+
+/* Hover effects for circuit */
+.circuit-bg:hover {
+    background: 
+        /* Base gradient */
+        linear-gradient(135deg, #1e3a8a 0%, #1e40af 25%, #3b82f6 50%, #2563eb 75%, #1d4ed8 100%),
+        /* Circuit pattern - Horizontal lines with higher opacity */
+        linear-gradient(90deg, transparent 0%, transparent 40%, rgba(255,255,255,0.9) 40%, rgba(255,255,255,0.9) 42%, transparent 42%, transparent 60%, rgba(255,255,255,0.9) 60%, rgba(255,255,255,0.9) 62%, transparent 62%, transparent 100%),
+        linear-gradient(90deg, transparent 0%, transparent 20%, rgba(255,255,255,0.9) 20%, rgba(255,255,255,0.9) 22%, transparent 22%, transparent 80%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0.9) 82%, transparent 82%, transparent 100%),
+        linear-gradient(90deg, transparent 0%, transparent 10%, rgba(255,255,255,0.9) 10%, rgba(255,255,255,0.9) 12%, transparent 12%, transparent 90%, rgba(255,255,255,0.9) 90%, rgba(255,255,255,0.9) 92%, transparent 92%, transparent 100%),
+        /* Circuit pattern - Vertical lines with higher opacity */
+        linear-gradient(0deg, transparent 0%, transparent 30%, rgba(255,255,255,0.9) 30%, rgba(255,255,255,0.9) 32%, transparent 32%, transparent 70%, rgba(255,255,255,0.9) 70%, rgba(255,255,255,0.9) 72%, transparent 72%, transparent 100%),
+        linear-gradient(0deg, transparent 0%, transparent 50%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 52%, transparent 52%, transparent 100%),
+        linear-gradient(0deg, transparent 0%, transparent 15%, rgba(255,255,255,0.9) 15%, rgba(255,255,255,0.9) 17%, transparent 17%, transparent 85%, rgba(255,255,255,0.9) 85%, rgba(255,255,255,0.9) 87%, transparent 87%, transparent 100%);
+    background-size: 
+        auto,
+        200px 200px,
+        150px 150px,
+        100px 100px,
+        200px 200px,
+        150px 150px,
+        100px 100px;
+    background-position: 
+        0 0,
+        0 0,
+        50px 50px,
+        25px 25px,
+        0 0,
+        75px 75px,
+        50px 50px;
+}
+
+.circuit-bg:hover .circuit-node {
+    opacity: 1;
+    box-shadow: 0 0 25px #ffffff, 0 0 50px #00d4ff;
+    transform: scale(1.5);
+}
+
+/* Mouse trail effect */
+.circuit-trail {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #ffffff, 0 0 20px #00d4ff;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* Animated circuit lines */
+@keyframes circuitPulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 0.9; }
+}
+
+.circuit-bg::before {
+    animation: circuitPulse 4s ease-in-out infinite;
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Skill bar animations */
+.skill-bar {
+    transition: width 1s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-
-#blackImage{
-  background-color: ffffff;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-#name_in_image{
-  color: rgb(220, 216, 240);
-  text-shadow: 2px 2px 5px rgb(11, 136, 125);
-  
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
 }
 
-
-#main_name{
-  color: rgb(5, 118, 122);
-  text-shadow: 2px 2px 5px rgb(11, 136, 125);
-  text-align: center;
+/* Custom focus styles */
+.focus-ring:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
 }
 
-.social_networks{
-  
-  padding-right: 100px;
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .gradient-bg {
+        background: white !important;
+        color: black !important;
+    }
 }
