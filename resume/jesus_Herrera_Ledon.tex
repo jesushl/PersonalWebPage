@@ -1,0 +1,165 @@
+\documentclass[12pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+% \moderncvstyle{classic} % Style options: 'casual', 'classic', 'banking', 'oldstyle'
+\moderncvstyle{classic}  % Style options: 'casual', 'classic', 'banking', 'oldstyle'
+\moderncvcolor{green}    % Color options: 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% Adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{palatino}
+\usepackage{xcolor}
+\usepackage{hyperref}
+% \definecolor{color 1}{ rgb }{0.55 , 0.55 , 0.55}
+\colorlet{firstnamecolor}{black!85!blue}
+\colorlet{lastnamecolor}{ green!85!black}
+\colorlet{titlecolor}{blue!75!black}
+\colorlet{sectioncolor}{green!70!black}
+
+% Personal data
+\title{Software Engineer} 
+\name{Jose de Jesus}
+{Herrera Ledon}
+
+\address{Colina San Agustin}{Mexico City, Mexico, 54195} 
+\phone[mobile]{+ (52)~5533~428574} 
+\email{jesushledon@gmail.com} 
+\homepage{www.j3su5pro.com} 
+\social[linkedin]{jesusherreraledon}
+\social[github]{jesushl}
+
+% Content
+\begin{document}
+\hypersetup{
+    % Colors
+    colorlinks=true,
+    linkcolor=blue!75!black,
+    filecolor=blue,
+    urlcolor=blue!75!black,
+    % PDF Metadata
+    pdftitle={Jose de Jesus Herrera Ledon AI Software Engineer},
+    pdfauthor={Jose de Jesus Herrera Ledon},
+    pdfsubject={Software Engineer Resume},
+    pdfkeywords={AI Engineer, Machine Learning, Python, Intel, Software Development, PyTorch, TorchRec, Full Stack, Quantum Computing, Cloud Computing, Data Science},
+    pdfcreator={LaTeX with ModernCV},
+    % Display
+    pdfpagemode=UseNone,          % No panels (cleaner for CV)
+    % Additional metadata 
+}
+
+
+\makecvtitle
+\section{Experience}
+\cventry{08/2022--Present}{AI Software Engineer}{Intel}{Remote}{}{
+    \begin{minipage}[t]{\textwidth}
+        \begin{itemize}
+            \item Developed and optimized AI frameworks for high-performance computing.
+            \item Contributed to open-source projects, enhancing community collaboration.
+            \item Implemented gemm XPU for Torchrec, improving performance on Intel GPUs.
+            \item VSCode extension development for Intel AI tools, enhancing developer experience.
+            \item Lead of Cloud Data Connector library, integrating with various cloud platforms.
+            \item Collaboration on Gaudi samples, showcasing AI capabilities on Intel hardware.
+        \end{itemize}
+    \end{minipage}
+}
+
+\cventry{07/2021--08/2022}{Senior Software Engineer}{UMBA}{Mexico City}{}{
+    \begin{minipage}[t]{\textwidth}
+        \begin{itemize}
+            \item Developed and maintained web applications using Flask and TypeScript.
+            \item Team lead of customer experience team, focusing on enhancing user engagement.
+            \item Creating and maintaining RESTful APIs for transactions and data processing.
+            \item Developed internal tools for data analysis and reporting.
+            \item Developed customer experience tools, enhancing user engagement and satisfaction.
+            \item Collaborate with financial and development teams to ensure compliance and efficiency.
+        \end{itemize}
+    \end{minipage} 
+}
+\cventry{11/2019--07/2021}{Senior Software Engineer}{Intel}{Guadalajara, Mexico}{}{
+    \begin{minipage}[t]{\textwidth}
+        \begin{itemize}
+            \item Developed software for quality and business intelligence.
+            \item Design and implementation of data pipelines for large-scale data processing.
+            \item Add Airflow workflows 
+            \item Design and migrate databases using OLAP cubes.
+            \item Implement data visualization tools for real-time analytics with django.
+        \end{itemize}
+    \end{minipage}
+}
+\cventry{10/2018--07/2019}{Senior Software Engineer}{Contpaqi}{Guadalajara, Mexico}{}{
+    \begin{minipage}[t]{\textwidth}
+        \begin{itemize}
+            \item Working in Research and Technology department.
+            \item Developed innovative solutions for financial software.
+            \item Create analytics for transactions and user behavior.
+            \item Implement machine learning algorithms such as NLP for data analytics.
+        \end{itemize}
+    \end{minipage}
+}
+\cventry{01/2017--09/2018}{Team Lead Software Engineer}{HCL Technologies}{Guadalajara, Mexico}{}{
+    \begin{minipage}[t]{\textwidth}
+        \begin{itemize}
+            \item Led a team of software engineers in developing enterprise ML applications.
+            \item Implemented Agile methodologies to improve project delivery.
+            \item Developed and maintained analytics applications.
+            \item Create tools to analyze and improve descriptions for US international Tariff Tables.
+        \end{itemize}
+    \end{minipage}
+}
+\cventry{02/2015--08/2016}{Software Developer CI CD}{IBM}{Guadalajara, Mexico}{}{
+    \begin{minipage}[t]{\textwidth}
+        \begin{itemize}
+            \item Collaborated with several teams to implement CI/CD pipelines.
+            \item Developed analytics tools and dependency analysis for large codebases.
+        \end{itemize}
+    \end{minipage}
+}
+\cventry{07/2014--02/2015}{Software Developer}{Hitts Technologies}{Guadalajara, Mexico}{}{
+    \begin{minipage}[t]{\textwidth}
+        \begin{itemize}
+            \item Developed and maintained enterprise applications using Java for IBM.
+            \item Work as L3 support for Rational Jazz Foundation.
+        \end{itemize}
+    \end{minipage}
+}
+
+\section{Skills}
+
+\cvitem{Programming}{Python, Java, JavaScript, C++, SYCL}
+\cvitem{AI/ML}{PyTorch,TorchRec, NLP}
+\cvitem{Web Dev}{Django, TypeScript, FastAPI, Flask}
+
+\cvitem{Databases}{PostgreSQL, MySQL, MongoDB, Redis}
+\cvitem{Tools}{Docker, Kubernetes, Git}
+\cvitem{Cloud}{AWS, Azure, GCP}
+\cvitem{Other}{Linux, Agile Methodologies, CI/CD}
+\cvitem{Languages}{English, Spanish}
+
+
+\section{Education}
+\cventry{2008--2013}{Computer Engineer}{Autonomous University of Mexico}{CDMX}{}{
+    \href{http://english.unam.mx/}{View}
+}
+\cventry{2018}{Machine Learning From Data To Decisions}{MIT Professional Education}{}{}{
+    \href{https://www.credential.net/kfzec58v#acc.XgA96V1D}{View Badge}
+}
+\cventry{2019}{Data Science and Big Data Analytics: Making Data-Driven Decisions}{MIT XPro}{}{}{
+    \href{https://certificates.mitxpro.mit.edu/course/89a65334663b4f12ba705077267b94d6.pdf}{View Badge}
+}
+\cventry{2019}{Quantum algorithms for Cybersecurity, Chemistry and Optimization}{MIT XPro}{}{}{
+    \href{https://certificates.mitxpro.mit.edu/course/8a9482946655456eb1be0b78a1dbd7b1.pdf}{View Badge}
+}
+\cventry{2019}{Quantum Computing Fundamentals}{MIT XPro}{}{}{
+    \href{https://certificates.mitxpro.mit.edu/program/06d55e57adbc4fa7b4d981f5abba3d1e.pdf}{View Certificate}
+}
+\cventry{2019}{Introduction to Quantum Computing }{MIT XPro}{}{}{
+    \href{https://certificates.mitxpro.mit.edu/course/c1c5462435aa4a938ef6a6f45acd3678.pdf}{View Badge}
+}
+\cventry{2025}{Intel Gaudi AI Accelerator}{Intel}{}{}{
+    \href{https://www.credly.com/badges/4ee4adea-9c4c-4983-bd5f-549c795eaa1c/linked_in_profile}{View Certificate}
+}
+\cventry{Current}{Continuous Learning}{Platzi}{}{}{
+    \href{https://platzi.com/p/j3su5pro/}{View Courses}
+}
+
+\end{document}
