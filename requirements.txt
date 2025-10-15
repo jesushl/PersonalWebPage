@@ -1,0 +1,17 @@
+# Dependencias para compilación de LaTeX desde Python
+# Instalar con: pip install -r requirements.txt
+
+# Para compilar archivos LaTeX
+latexmk==4.75
+
+# Para manejo de archivos y rutas
+pathlib2==2.3.7
+
+# Para logging y manejo de errores
+colorama==0.4.6
+
+# Para validación de archivos
+click==8.1.7
+
+# Para manejo de configuraciones
+pyyaml==6.0.1
