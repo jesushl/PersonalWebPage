@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose de Jesus Herrera Ledon - AI Software Engineer</title>
-    <meta name="description" content="AI Software Engineer at Intel with expertise in PyTorch, TorchRec, and high-performance computing. Specialized in machine learning, quantum computing, and cloud technologies.">
+    <title>Jesús Herrera Ledón — AI Systems Engineer</title>
+    <meta name="description" content="Jesús Herrera Ledón builds AI systems, high-performance software, and tools that turn research into products.">
     
     <!-- Tailwind CSS from CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/page.css">
     
     <!-- Custom Tailwind Config -->
     <script>
@@ -41,23 +42,74 @@
                 }
             }
         }
+        document.addEventListener('DOMContentLoaded', function() {
+        // English is the primary language; the toggle provides a Spanish version
+        const languageToggle = document.getElementById('languageToggle');
+        const bilingualCopy = {
+            'a[href="#about"]': ['Profile', 'Perfil'],
+            'a[href="#experience"]': ['Experience', 'Experiencia'],
+            'a[href="#skills"]': ['Expertise', 'Especialidad'],
+            'a[href="#education"]': ['Education', 'Formación'],
+            '.nav-cta': ["Let's talk", 'Hablemos'],
+            '#hero h1': ['I design the infrastructure that makes <em>intelligence</em> possible.', 'Diseño la infraestructura que hace posible la <em>inteligencia</em>.'],
+            '#hero h2': ['Jesús Herrera Ledón — AI Software Engineer', 'Jesús Herrera Ledón — Ingeniero de Software en IA'],
+            '#hero p.text-lg': ['I build AI systems and high-performance software—from ML frameworks and hardware acceleration to tools that help other teams build better.', 'Construyo sistemas de IA y software de alto rendimiento: desde frameworks de ML y aceleración en hardware hasta herramientas que ayudan a otros equipos a crear mejor.'],
+            '#hero .bg-white': ['View experience', 'Ver trayectoria'],
+            '#hero a[download]': ['Download CV', 'Descargar CV'],
+            '#hero .bg-secondary-500': ['Based in Mexico City', 'Con base en Ciudad de México'],
+            '#about .text-center:first-child h2': ['About Me', 'Sobre mí'],
+            '#about .text-center:first-child p': ["I'm an AI Software Engineer with over 10 years of experience in software development, specializing in machine learning, quantum computing, and high-performance computing. At S&P Global's Enterprise Data Organization (EDO), I work on information-extraction agents for energy data and oil wells, as well as processes that connect agents to extract energy insights.", 'Soy ingeniero de software en IA con más de 10 años de experiencia en desarrollo de software, especializado en machine learning, computación cuántica y cómputo de alto rendimiento. En Enterprise Data Organization (EDO) de S&P Global trabajo con agentes de extracción de información energética y de pozos petroleros, además de crear procesos que conectan agentes para extraer datos de energía.'],
+            '#about .grid > div:nth-child(1) h3': ['AI & ML', 'IA y ML'],
+            '#about .grid > div:nth-child(1) p': ['Expert in PyTorch, TorchRec, and developing AI frameworks for high-performance computing.', 'Experto en PyTorch, TorchRec y desarrollo de frameworks de IA para cómputo de alto rendimiento.'],
+            '#about .grid > div:nth-child(2) h3': ['Software Development', 'Desarrollo de software'],
+            '#about .grid > div:nth-child(2) p': ['Full-stack development with Python, Java, JavaScript, and modern web technologies.', 'Desarrollo full-stack con Python, Java, JavaScript y tecnologías web modernas.'],
+            '#about .grid > div:nth-child(3) h3': ['Quantum Computing', 'Computación cuántica'],
+            '#about .grid > div:nth-child(3) p': ['Certified in quantum algorithms for cybersecurity, chemistry, and optimization.', 'Certificado en algoritmos cuánticos para ciberseguridad, química y optimización.'],
+            '#experience .text-center:first-child h2': ['Professional Experience', 'Experiencia profesional'],
+            '#experience .text-center:first-child p': ['My journey in software engineering and AI development', 'Mi trayectoria en ingeniería de software y desarrollo de IA'],
+            '#experience .text-center:first-child a': ['Download Full Resume (PDF)', 'Descargar CV completo (PDF)'],
+            '#experience .space-y-8 > div:first-child h3': ['Machine Learning Data Engineer', 'Ingeniero de datos de machine learning'],
+            '#experience .space-y-8 > div:first-child p': ['S&P Global · Enterprise Data Organization (EDO)', 'S&P Global · Enterprise Data Organization (EDO)'],
+            '#experience .space-y-8 > div:first-child ul li:nth-child(1)': ['<i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>Developing information-extraction agents for energy data, including oil-well information', '<i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>Desarrollo agentes de extracción de información energética, incluyendo información de pozos petroleros'],
+            '#experience .space-y-8 > div:first-child ul li:nth-child(2)': ['<i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>Creating processes that connect specialized agents to extract and structure energy data', '<i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>Creo procesos que conectan agentes especializados para extraer y estructurar datos de energía'],
+            '#experience .space-y-8 > div:first-child ul li:nth-child(3)': ['<i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>Building agent-based workflows that turn complex energy information into usable insights', '<i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>Construyo flujos basados en agentes que convierten información energética compleja en insights utilizables'],
+            '#skills .text-center:first-child h2': ['Skills & Technologies', 'Habilidades y tecnologías'],
+            '#skills .text-center:first-child p': ['My technical expertise and tools', 'Mi experiencia técnica y herramientas'],
+            '#skills .grid > div:nth-child(1) h3': ['Programming', 'Programación'],
+            '#skills .grid > div:nth-child(2) h3': ['AI/ML', 'IA/ML'],
+            '#skills .grid > div:nth-child(3) h3': ['Web Dev', 'Desarrollo web'],
+            '#skills .grid > div:nth-child(4) h3': ['Cloud & Tools', 'Cloud y herramientas'],
+            '#education .text-center:first-child h2': ['Education & Certifications', 'Formación y certificaciones'],
+            '#education .text-center:first-child p': ['My academic background and professional certifications', 'Mi formación académica y certificaciones profesionales'],
+            '#education .grid > div:first-child h3': ['Formal Education', 'Formación académica'],
+            '#education .grid > div:last-child h3': ['Certifications', 'Certificaciones'],
+            '#contact .text-center:first-child h2': ['Get In Touch', 'Contacto'],
+            '#contact .text-center:first-child p': ["Let's connect and discuss opportunities", 'Conectemos y hablemos de oportunidades'],
+            '#contact .grid > div:first-child h3': ['Contact Information', 'Información de contacto'],
+            '#contact .grid > div:last-child h3': ['Connect With Me', 'Conecta conmigo'],
+            'footer p:first-child': ['Jose de Jesus Herrera Ledon', 'José de Jesús Herrera Ledón'],
+            'footer p:nth-child(2)': ['AI Software Engineer passionate about innovation and technology', 'Ingeniero de software en IA apasionado por la innovación y la tecnología'],
+            'footer p:last-child': ['© 2025 Jose de Jesus Herrera Ledon. All rights reserved.', '© 2025 José de Jesús Herrera Ledón. Todos los derechos reservados.']
+        };
+
+        function setLanguage(language) {
+            const languageIndex = language === 'es' ? 1 : 0;
+            Object.entries(bilingualCopy).forEach(([selector, values]) => {
+                const element = document.querySelector(selector);
+                if (element) element.innerHTML = values[languageIndex];
+            });
+            document.documentElement.lang = language;
+            languageToggle.textContent = language === 'es' ? 'EN' : 'ES';
+            languageToggle.setAttribute('aria-pressed', String(language === 'es'));
+            languageToggle.setAttribute('aria-label', language === 'es' ? 'Switch to English' : 'Cambiar a español');
+        }
+
+        languageToggle.addEventListener('click', function() {
+            setLanguage(document.documentElement.lang === 'en' ? 'es' : 'en');
+        });
+        });
     </script>
     
-    <style>
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .skill-bar {
-            transition: width 1s ease-in-out;
-        }
-    </style>
 </head>
 <body class="font-inter bg-gray-50">
     <!-- Navigation -->
@@ -65,14 +117,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <h1 class="text-xl font-bold text-primary-600">J3SU5</h1>
+                    <a href="#hero" class="site-mark" aria-label="Inicio">JHL<span>·</span></a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="#about" class="text-gray-700 hover:text-primary-600 transition-colors">About</a>
-                    <a href="#experience" class="text-gray-700 hover:text-primary-600 transition-colors">Experience</a>
-                    <a href="#skills" class="text-gray-700 hover:text-primary-600 transition-colors">Skills</a>
-                    <a href="#education" class="text-gray-700 hover:text-primary-600 transition-colors">Education</a>
-                    <a href="#contact" class="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors">Contact</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary-600 transition-colors">Profile</a>
+                    <a href="#experience" class="nav-link text-gray-700 hover:text-primary-600 transition-colors">Experience</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-primary-600 transition-colors">Expertise</a>
+                    <a href="#education" class="nav-link text-gray-700 hover:text-primary-600 transition-colors">Education</a>
+                    <a href="#contact" class="nav-cta bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors">Let's talk <span aria-hidden="true">↗</span></a>
+                    <button id="languageToggle" class="language-toggle" type="button" aria-pressed="false" aria-label="Cambiar a español">ES</button>
                 </div>
             </div>
         </div>
@@ -83,26 +136,26 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h1 class="text-5xl font-bold mb-4">Jose de Jesus Herrera Ledon</h1>
-                    <h2 class="text-2xl font-semibold mb-6 text-blue-200">AI Software Engineer at Intel</h2>
+                    <p class="hero-kicker"><span></span> AI systems · software · research</p>
+                    <h1 class="text-5xl font-bold mb-4">I design the infrastructure that makes <em>intelligence</em> possible.</h1>
+                    <h2 class="text-2xl font-semibold mb-6 text-blue-200">Jesús Herrera Ledón — AI Software Engineer</h2>
                     <p class="text-lg mb-8 text-blue-100">
-                        Specialized in high-performance computing, PyTorch, TorchRec, and quantum computing. 
-                        Passionate about developing cutting-edge AI solutions and contributing to open-source projects.
+                        I build AI systems and high-performance software—from ML frameworks and hardware acceleration to tools that help other teams build better.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#contact" class="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                            Get in Touch
+                            View experience
                         </a>
-                        <a href="#experience" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
-                            View Experience
+                        <a href="resume/Jose_de_Jesus_Herrera_Ledon_AI_SE.pdf" download class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
+                            Download CV
                         </a>
                     </div>
                 </div>
                 <div class="flex justify-center">
                     <div class="relative">
-                        <img src="images/me.jpg" alt="Jose de Jesus Herrera Ledon" class="w-80 h-80 rounded-full object-cover shadow-2xl">
+                        <img src="images/me.jpg" alt="Jesús Herrera Ledón" class="w-80 h-80 rounded-full object-cover shadow-2xl">
                         <div class="absolute -bottom-4 -right-4 bg-secondary-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                            <i class="fas fa-robot mr-2"></i>AI Engineer
+                            <i class="fas fa-robot mr-2"></i>Based in Mexico City
                         </div>
                     </div>
                 </div>
@@ -118,8 +171,7 @@
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     I'm an AI Software Engineer with over 10 years of experience in software development, 
                     specializing in machine learning, quantum computing, and high-performance computing. 
-                    Currently working at Intel, I contribute to open-source AI frameworks and develop 
-                    cutting-edge solutions for the future of computing.
+                    At S&P Global's Enterprise Data Organization (EDO), I work on information-extraction agents for energy data and oil wells, as well as processes that connect agents to extract energy insights.
                 </p>
             </div>
             
@@ -185,6 +237,36 @@
             </div>
             
             <div class="space-y-8">
+                <!-- S&P Global Machine Learning Data Engineer -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div class="flex items-center">
+                            <img src="images/spglobal.jpeg" alt="S&P Global" class="company-logo w-12 h-12 rounded-lg mr-4 object-cover">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Machine Learning Data Engineer</h3>
+                                <p class="text-primary-600 font-semibold">S&amp;P Global · Enterprise Data Organization (EDO)</p>
+                            </div>
+                        </div>
+                        <div class="text-gray-500 mt-2 md:mt-0">
+                            <i class="fas fa-calendar mr-2"></i>Nov 15, 2025 - Present
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Developing information-extraction agents for energy data, including oil-well information
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Creating processes that connect specialized agents to extract and structure energy data
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary-500 mt-1 mr-3"></i>
+                            Building agent-based workflows that turn complex energy information into usable insights
+                        </li>
+                    </ul>
+                </div>
+
                 <!-- Intel AI Software Engineer -->
                 <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -530,7 +612,7 @@
                     <div class="space-y-2">
                         <div class="flex justify-between items-center">
                             <span class="text-sm font-medium">AWS</span>
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Advanced</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Intermediate</span>
                         </div>
                         <div class="flex justify-between items-center">
                             <span class="text-sm font-medium">Docker</span>
@@ -678,7 +760,7 @@
                                 <p class="text-gray-600">github.com/jesushl</p>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/jesusherreraledon/" target="_blank" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                        <a href="https://www.linkedin.com/in/jesushledon" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                             <i class="fab fa-linkedin text-2xl mr-4 text-blue-600"></i>
                             <div>
                                 <p class="font-semibold">LinkedIn</p>
@@ -707,7 +789,7 @@
                 <a href="https://github.com/jesushl" target="_blank" class="text-gray-400 hover:text-white transition-colors">
                     <i class="fab fa-github text-xl"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jesusherreraledon/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/jesushledon" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
                     <i class="fab fa-linkedin text-xl"></i>
                 </a>
                 <a href="mailto:jesushledon@gmail.com" class="text-gray-400 hover:text-white transition-colors">
