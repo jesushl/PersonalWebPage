@@ -19,8 +19,12 @@
   },
   "homepage": "https://github.com/jesushl/PersonalWebPage#readme",
   "dependencies": {
-    "express": "^4.21.2",
-    "serve": "^14.2.4"
+    "express": "^4.22.3",
+    "serve": "^14.2.6"
+  },
+  "overrides": {
+    "compression": "1.8.2",
+    "proxy-addr": "2.0.8"
   },
   "engines": {
     "node": ">=18.0.0"
