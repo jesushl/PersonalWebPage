@@ -271,6 +271,20 @@ nav > div {
     margin-left: 0.35rem;
 }
 
+.nav-social {
+    align-items: center;
+    color: var(--forest);
+    display: inline-flex;
+    font-size: 1.15rem;
+    justify-content: center;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-social:hover {
+    color: #0a66c2;
+    transform: translateY(-1px);
+}
+
 .language-toggle {
     background: transparent;
     border: 1px solid var(--line);
